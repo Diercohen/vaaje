@@ -1,0 +1,20 @@
+# Build output
+dist/
+node_modules/
+
+# TypeScript compiler logs and cache
+*.tsbuildinfo
+.tscache/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables / Secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

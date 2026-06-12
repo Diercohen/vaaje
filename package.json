@@ -5,8 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs" 
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Diercohen/vaaje.git"
@@ -19,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/Diercohen/vaaje/issues"
   },
-  "homepage": "https://github.com/Diercohen/vaaje#readme"
+  "homepage": "https://github.com/Diercohen/vaaje#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
 }
